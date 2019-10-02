@@ -2,7 +2,7 @@
 
 Created with love by: `CUONG TRAN`
   
-View online at: `URL`
+View online at: https://nostalgic-booth-5e41ec.netlify.com
   
 * This is the fun game about guessing number that is created by Javascript
 * User will get to choose a number between 1-100 in 30 seconds and WIN !
