@@ -3,7 +3,7 @@ let history = [];
 let random = Math.floor(Math.random() * 100) + 1;   //randomly choose a random number 1-100
 let guessCount = 0;
 
-function numberGuessing () {
+function numberGuessing() {
     //Take number from Textbox
     let number = document.getElementById("numberInput").value;
     //History
@@ -11,7 +11,6 @@ function numberGuessing () {
         document.getElementById("result").innerHTML = "You already choose this number!"
         return;
     }
-    
     //Start counting number of guesses
     document.getElementById("guessRemain").innerHTML = 9 - guessCount;
     if (guessCount > 9) {
@@ -19,19 +18,16 @@ function numberGuessing () {
         document.getElementById("guessRemain").innerHTML = "";
         return;
     }
-    
     //IF CONDITION
-    if (number>random) {
+    if (number > random) {
         document.getElementById("result").innerHTML = "TOO HIGH!";
         document.getElementById("numberInput").value = "";
         ++guessCount;
-    
     }
-    else if (number<random) {
+    else if (number < random) {
         document.getElementById("result").innerHTML = "TOO LOW!";
         document.getElementById("numberInput").value = "";
         ++guessCount;
-
     }
     else {
         alert("YOU ARE CORRECT!!");
@@ -40,6 +36,16 @@ function numberGuessing () {
     history.push(number);
     document.getElementById("pastGuess").innerHTML = history;
 }
+//Set timer
+function myTimer(i) {
+    const countTime = setInterval(function () {
+        document.getElementById("result").innerHTML = "FAILED! TRY AGAIN!!";
+    }, 30000);
+}
+
+
+
+
 
 
 

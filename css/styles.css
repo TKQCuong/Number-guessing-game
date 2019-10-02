@@ -48,3 +48,11 @@ button {
     font-size: 1rem;
     margin: 5px;
 }
+
+#setTime {
+    background-color: red;
+}
+
+.fa-crown {
+    color: red;
+}
