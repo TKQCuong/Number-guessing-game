@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="heading">
+            <h1>GUESS MY NUMBER!</h1>
+            <p>A Fun Number Guessing Game using JS</p>
+            <hr>
+        </div>
+
+        <p>Guess my random secret number from 1-100 and WIN !</p>
+        <span id="remainder"></span>
+        <input type="number" id="numberInput" onclick="this.value=''" required autofocus />
+        <br><br>
+        <button id="guessNumber" onclick=numberGuessing()>Guess</button>
+        <br><br>
+        <button id="startOver" onclick="location.reload()">Restart Game</button>
+        
+        <p class="RemainGuess">Guess #</p>
+        <span id="guessRemain"></span>
+        <br>
+        <span id="result"></span><br>
+        <span id="pastGuess"></span>
+        <span id="setTime"></span>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

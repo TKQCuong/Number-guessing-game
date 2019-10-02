@@ -1,0 +1,50 @@
+h1 {
+    color: rgb(51, 204, 51);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    word-spacing: 10px;
+    font-size: 40px;
+    margin-bottom: -2px;
+}
+.main-content {
+    min-height: 420px;
+    text-align: center;
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    margin: 0;
+}
+.heading {
+    position: relative;
+    margin-top: -1.6rem;
+    padding-top: 3px;
+}
+
+.heading p {
+    font-weight: bold;
+}
+#result {
+    font-weight: 800;
+}
+
+#numberInput {
+    width: 10rem;
+    height: 2.5rem;
+}
+
+#guessRemain {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(0, 0, 102);
+    width: 10rem;
+    height: 2rem;
+}
+.RemainGuess {
+    font-size: 1rem;
+    margin: 5px;
+}
